@@ -1,0 +1,88 @@
+-- Configuração de codificação
+SET client_encoding = 'UTF8';
+
+-- Inserindo usuários
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Gustavo Henrique Monteiro', '895.712.640-67', 'ppinto@example.com');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Srta. Bárbara Macedo', '652.143.879-46', 'aylarocha@example.net');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Igor Mendes', '810.423.657-17', 'lunnadas-neves@example.com');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Dr. Juan Cirino', '145.309.268-42', 'olivia43@example.net');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Rael Vargas', '065.479.812-58', 'klima@example.com');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Gabriela Leão', '235.916.807-02', 'lmartins@example.com');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Dra. Bianca Caldeira', '295.836.470-47', 'maria-vitoria77@example.com');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Breno Fernandes', '975.846.210-58', 'rebecada-paz@example.org');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Rodrigo Cassiano', '315.482.096-51', 'adias@example.org');
+INSERT INTO Usuario (Nome, CPF, Email) VALUES ('Olivia da Cruz', '062.549.738-47', 'isabelcosta@example.net');
+
+-- Inserindo contas bancárias
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('47337386959899801', 2634.37, 'Poupança', 2);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('105167235269303995', 4710.91, 'Corrente', 3);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('701385961656160685', 1754.74, 'Corrente', 2);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('995711944070565133', 4978.84, 'Corrente', 2);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('565851328325299673', 5641.66, 'Poupança', 10);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('141002410117752927', 7371.09, 'Poupança', 2);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('756539365337390923', 2109.89, 'Corrente', 10);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('361472926574279584', 3537.91, 'Poupança', 8);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('389604835275938468', 3726.3, 'Poupança', 6);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('527060918596238430', 8641.11, 'Poupança', 7);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('436247365135000457', 9582.1, 'Corrente', 8);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('473209051987180706', 9831.16, 'Poupança', 4);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('285904914070554678', 1663.58, 'Corrente', 3);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('351192489883857829', 1527.68, 'Poupança', 2);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('217084268251216506', 253.52, 'Poupança', 4);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('897298205461849763', 264.72, 'Corrente', 4);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('371679978848018333', 150.97, 'Poupança', 1);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('465423938571272366', 2984.84, 'Poupança', 6);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('45558803393511664', 9213.6, 'Corrente', 4);
+INSERT INTO ContaBancaria (NumeroConta, Saldo, TipoConta, UsuarioID) VALUES ('523543177774387554', 1123.18, 'Poupança', 5);
+
+-- Inserindo transações
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (10, '2025-02-24 04:33:23', 581.73, 'Débito', 'Quaerat et pariatur ipsa quam.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (12, '2025-01-09 09:30:41', 51.28, 'Crédito', 'Accusantium doloribus dolorem deleniti.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (6, '2024-12-17 02:15:38', 380.69, 'Crédito', 'Excepturi aut hic minima excepturi reprehenderit.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (12, '2025-01-06 07:46:43', 222.46, 'Crédito', 'Reprehenderit laboriosam nemo incidunt atque quisquam aut.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (9, '2024-12-30 07:53:54', 986.89, 'Débito', 'Mollitia voluptatibus incidunt aliquam cupiditate illum soluta.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (3, '2025-03-01 11:02:28', 432.13, 'Crédito', 'Consequatur quis nemo cumque.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (12, '2025-01-16 03:46:02', 463.47, 'Débito', 'Consequuntur expedita necessitatibus.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (6, '2025-01-28 17:29:33', 613.92, 'Débito', 'Voluptate hic nostrum reprehenderit quo officia.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (12, '2024-12-15 01:36:12', 877.56, 'Débito', 'Quisquam mollitia hic itaque ipsa sint.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (2, '2025-02-26 19:30:54', 870.45, 'Crédito', 'Ipsum magnam nam voluptate harum.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (1, '2024-12-21 06:25:31', 89.61, 'Débito', 'Delectus fugit illum aliquid sed.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (13, '2024-12-11 02:44:46', 531.24, 'Débito', 'Ipsam maxime architecto sed ab.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (13, '2024-12-06 09:39:12', 641.3, 'Crédito', 'Voluptas adipisci quis reprehenderit exercitationem maxime.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (9, '2025-02-08 06:45:02', 814.3, 'Débito', 'Veniam hic quis illo.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (16, '2024-12-24 18:32:09', 113.3, 'Crédito', 'Repellendus error consequatur ipsa.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (16, '2025-01-29 21:22:51', 331.2, 'Débito', 'Sed impedit eius autem.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (19, '2024-12-28 05:42:15', 456.67, 'Crédito', 'Ad officiis reiciendis aliquid rem.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (4, '2025-01-11 15:23:37', 828.77, 'Débito', 'Libero laborum vero hic modi repellendus.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (5, '2025-01-23 07:53:48', 919.52, 'Crédito', 'Amet maiores cupiditate tempora eos praesentium ratione.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (2, '2024-12-26 11:08:08', 434.14, 'Crédito', 'Quo expedita nihil impedit alias.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (8, '2025-01-10 01:27:14', 476.3, 'Crédito', 'Tenetur eaque vitae exercitationem.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (11, '2024-12-05 03:58:48', 701.66, 'Crédito', 'Fugiat quas facere.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (3, '2025-02-08 23:57:33', 878.22, 'Débito', 'Atque veritatis quas eos asperiores perferendis fugiat.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (19, '2024-12-26 14:37:14', 865.74, 'Crédito', 'Quam expedita dolorum dignissimos.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (4, '2024-12-06 23:31:26', 721.29, 'Crédito', 'Eligendi consequuntur in.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (18, '2024-12-12 06:17:01', 158.08, 'Débito', 'Magnam sint iste voluptate ut nihil.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (20, '2025-01-01 21:11:17', 79.64, 'Débito', 'Maiores ullam neque provident eum nesciunt facilis.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (3, '2025-01-29 13:44:45', 125.48, 'Crédito', 'Nam rem necessitatibus voluptas dolorum maxime tempora.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (6, '2024-12-28 13:05:22', 655.9, 'Crédito', 'Cupiditate nemo vero quibusdam reprehenderit asperiores.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (20, '2025-01-24 13:47:20', 521.88, 'Débito', 'Nam laudantium voluptatem explicabo.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (6, '2025-02-25 17:10:58', 617.6, 'Crédito', 'Nulla error aspernatur voluptates occaecati atque reiciendis itaque.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (3, '2025-02-05 08:21:05', 763.87, 'Crédito', 'Nulla aliquid reiciendis rerum earum asperiores quam.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (13, '2024-12-30 21:56:31', 752.94, 'Crédito', 'Eligendi architecto blanditiis minus.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (20, '2025-02-06 01:45:00', 517.41, 'Crédito', 'Id ipsam fugiat cumque ipsum nulla.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (3, '2025-01-06 18:43:36', 204.82, 'Débito', 'Veniam dicta cumque itaque optio distinctio repudiandae aperiam.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (6, '2024-12-19 15:57:54', 506.36, 'Crédito', 'Fugit suscipit numquam qui sed.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (4, '2025-01-04 18:25:34', 443.94, 'Débito', 'Nisi fuga ex ipsam quia pariatur molestiae voluptatem.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (1, '2025-03-02 12:47:11', 711.59, 'Crédito', 'Quam dolorum consequuntur vero occaecati nobis ut.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (12, '2025-02-20 15:49:59', 229.59, 'Crédito', 'Illum eligendi dolores sint est facere aliquid.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (15, '2024-12-20 09:17:26', 619.28, 'Crédito', 'Ea similique perspiciatis dolorum eius.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (1, '2025-02-05 05:18:20', 437.92, 'Crédito', 'Excepturi in delectus iure officia.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (9, '2025-01-11 17:14:25', 139.72, 'Débito', 'A autem quo rerum.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (15, '2025-02-16 00:54:38', 165.59, 'Débito', 'Maxime voluptatem eligendi.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (4, '2024-12-05 02:27:02', 75.31, 'Crédito', 'Neque laudantium explicabo rerum laudantium.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (10, '2025-02-10 14:34:29', 712.01, 'Crédito', 'Eligendi quisquam error veniam.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (7, '2025-02-11 07:46:17', 277.96, 'Débito', 'Quam illo commodi harum culpa nulla praesentium.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (4, '2025-02-17 11:54:34', 634.56, 'Crédito', 'Voluptatibus molestiae beatae dolor.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (6, '2025-02-13 07:22:24', 613.24, 'Débito', 'Modi ducimus fugiat hic.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (13, '2025-01-28 15:41:14', 63.18, 'Crédito', 'Culpa eligendi dolorem occaecati esse soluta nemo.');
+INSERT INTO Transacao (ContaID, DataTransacao, Valor, TipoTransacao, Descricao) VALUES (8, '2024-12-11 21:50:47', 42.39, 'Crédito', 'Totam perferendis quod id.');
