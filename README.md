@@ -11,12 +11,18 @@ Este desafio analisa transações bancárias para:
 
 ## Configuração
 
-1. Instale as dependências:
+1. Clone o repositório:
+```bash
+git clone https://github.com/LeoFaleiros/samplemed.git
+cd samplemed
+```
+
+2. Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Configure as variáveis de ambiente:
+3. Configure as variáveis de ambiente:
 ```bash
 # Copie o arquivo de exemplo
 cp bonus/.env.example bonus/.env
