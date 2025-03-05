@@ -78,3 +78,9 @@ DB_PASSWORD=senha
 - Resolução prática: pasta `bonus/`
 - Dashboard interativo com análises visuais das transações financeiras:
 [Acessar Dashboard no AWS QuickSight](https://us-east-2.quicksight.aws.amazon.com/sn/dashboards/36b6411e-1809-440c-9f0f-0d8b1e353307/views/aa679352-f42a-47e1-be9e-3b2a2b8aa66c?directory_alias=leonardofaleiros)
+
+## Visualização do Dashboard
+
+Abaixo está uma visualização do dashboard criado no AWS QuickSight para análise das transações:
+
+![Dashboard de Análise de Transações](bonus/visualizacao_quicksight.jpg)
