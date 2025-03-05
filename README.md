@@ -83,4 +83,4 @@ DB_PASSWORD=senha
 
 Abaixo está uma visualização do dashboard criado no AWS QuickSight para análise das transações:
 
-![Dashboard de Análise de Transações](bonus/visualizacao_quicksight.jpg)
+![Dashboard de Análise de Transações](bonus/visualizacao_quicksight2.jpg)
